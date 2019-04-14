@@ -3,8 +3,8 @@
  * https://jquery.com/
  *
  * Includes Sizzle.js
- * https://sizzlejs.com/
- *
+ * https://sizzlejs.com/6
+ *fываываывавыываываы
  * Copyright JS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
