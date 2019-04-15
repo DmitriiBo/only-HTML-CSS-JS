@@ -80,17 +80,6 @@ body {
 
 }
 
-p {
-    margin: 1em 0
-}
-
-p:first-child {
-    margin-top: 0
-}
-
-p:last-child {
-    margin-bottom: 0
-}
 
 img,
 object,
@@ -179,7 +168,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     font-size: 14px;
-    text-align: center
+    text-align: center;
+    list-style: none;
 }
 
 .menu-list .menu-item>.link {
@@ -271,7 +261,6 @@ body {
 main {
     width: 100%;
     height: 2500px;
-    margin: 10px;
 }
 
 .portfolio {
@@ -285,12 +274,36 @@ main {
     margin-top: 90px;
     grid-column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-right: 35px;
 }
 
 #individual {
-    margin-top: 100px;
+    margin-top: 130px;
     display: grid;
     grid-column-gap: 3px;
+    padding-right: 35px;
     row-gap: 20px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
+}
+
+
+#kids{
+    padding: 0 35px 0 5px ;
+    margin-top: 130px;
+    column-gap: 5px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+#love{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin-top: 130px;
+    padding-right: 35px;
+    grid-column-gap: 10px;
+}
+
+#individual a{
+    padding: 9px;
 }
