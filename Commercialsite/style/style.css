@@ -303,3 +303,7 @@ main {
     padding-right: 35px;
     grid-column-gap: 10px;
 }
+
+#individual a{
+    padding: 9px;
+}
