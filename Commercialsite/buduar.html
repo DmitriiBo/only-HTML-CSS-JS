@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,13 @@
     <title>Фотограф Мария Петровна</title>
     <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/lightgallery.css" />
     <script src="./js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    <script src="./js/jquery.shuffle-images.js"></script>
+    <script src="./js/lightgallery.min.js"></script>
+    <script src="./js/lg-thumbnail.min.js"></script>
+    <script src="./js/lg-fullscreen.min.js"></script>
+    <script src="./js/lg-pager.min.js"></script>
 </head>
 
 <body>
@@ -28,53 +31,39 @@
                 </ul>
             </div>
         </nav>
+
     </header>
     <main>
-        <div class="gallery">
-            <a class="buduar" href="./buduar.html">
-                <p>Buduar style</p>
-                <div class="shuffle-me">
-                    <img src="./img/buduar-s/IMG_5240.JPG">
-                    <img src="./img/buduar-s/IMG_5247.JPG">
-                    <img src="./img/buduar-s/IMG_5478.JPG">
-                </div>
+        <div id="buduar">
+            <a href="img/buduar/IMG_5240.JPG">
+                <img src="img/buduar-s/IMG_5240.JPG" />
             </a>
-            <a class="lovestory" href="./lovestory.html">
-                <p>LoveStory</p>
-                <div class="shuffle-me">
-                    <img src="./img/lovestory-s/IMG_3164.JPG">
-                    <img src="./img/lovestory-s/IMG_4202.JPG">
-                    <img src="./img/lovestory-s/IMG_4529.JPG">
-                </div>
+            <a href="img/buduar/IMG_5247.JPG">
+                <img src="img/buduar-s/IMG_5247.JPG" />
             </a>
-            <a  class="individual" href="./individual.html">
-                <p>Individual Photography</p>
-                <div class="shuffle-me">
-                    <img src="./img/individual-s/IMG_1619.JPG">
-                    <img src="./img/individual-s/IMG_2454.JPG">
-                    <img src="./img/individual-s/IMG_6627.JPG">
-                </div>
+            <a href="img/buduar/IMG_5478.JPG">
+                <img src="img/buduar-s/IMG_5478.JPG" />
             </a>
-            <a class="kids" href="./kids.html">
-                <p>Kids</p>
-                <div class="shuffle-me">
-                    <img src="./img/kids-s/IMG_2676.JPG">
-                    <img src="./img/kids-s/IMG_2784.JPG">
-                    <img src="./img/kids-s/IMG_2809.JPG">
-                </div>
+            <a href="img/buduar/IMG_5479.JPG">
+                <img src="img/buduar-s/IMG_5479.JPG" />
+            </a>
+            <a href="img/buduar/IMG_5481.JPG">
+                <img src="img/buduar-s/IMG_5481.JPG" />
+            </a>
+            <a href="img/buduar/IMG_5617.JPG">
+                <img src="img/buduar-s/IMG_5617.JPG" />
+            </a>
+            <a href="img/buduar/IMG_5891.JPG">
+                <img src="img/buduar-s/IMG_5891.JPG" />
             </a>
         </div>
-
     </main>
     <footer></footer>
-
     <script>
-        $(".shuffle-me").shuffleImages({
-            trigger: "imageHover",
-            hoverTrigger: 750,  
-        })
+        $(document).ready(function () {
+            $("#buduar").lightGallery();
+        });
     </script>
-
 </body>
 
 </html>

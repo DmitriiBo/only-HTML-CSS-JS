@@ -14,6 +14,13 @@
 .logo {
     font-family: 'Great Vibes', cursive;
     font-size: 130px;
+    margin: 36px 0;
+    text-align: center
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+    
 }
 
 .logo img.lazyload,
@@ -69,8 +76,6 @@ html {
 }
 
 body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     width: 100%;
     min-width: 768px;
     height: 100%;
@@ -80,16 +85,6 @@ body {
 
 }
 
-
-img,
-object,
-embed {
-    max-width: 100%
-}
-
-img {
-    height: auto
-}
 
 .button {
     display: inline-block;
@@ -134,16 +129,6 @@ img {
     opacity: 0.5;
     cursor: not-allowed
 }
-
-body {
-    overflow-y: scroll
-}
-
-.logo {
-    margin: 36px 0;
-    text-align: center
-}
-
 
 
 .menu {
@@ -260,7 +245,6 @@ body {
 
 main {
     width: 100%;
-    height: 2500px;
 }
 
 .portfolio {
@@ -302,4 +286,78 @@ main {
     margin-top: 130px;
     padding-right: 35px;
     grid-column-gap: 10px;
+}
+
+#individual a{
+    padding: 9px;
+}
+
+
+#kids a{
+    padding: 10px;
+}
+
+/* галлерея. главная страница*/
+
+.gallery{
+    width: 65%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 5px;
+}
+
+.gallery a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.buduar  {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    font-family: 'Great Vibes', cursive;
+}
+
+.lovestory {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-family: 'Great Vibes', cursive;
+}
+
+.individual {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: 'Great Vibes', cursive;
+}
+
+.kids {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-family: 'Great Vibes', cursive;
+}
+
+.buduar img{
+    width: 95%
+}
+
+.lovestory img{
+    width: 95%;
+}
+.kids img{
+    width: 90%;
+    height: 50%
+}
+
+.individual img{
+    width: 90%;
 }
