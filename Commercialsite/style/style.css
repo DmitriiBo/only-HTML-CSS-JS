@@ -15,6 +15,17 @@
     display: none
 }
 
+.doposle{
+    width: 380px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.doposle img{
+    height: 400px;
+    width: 600px;
+}
+
 .branding {
     font-size: 12px
 }
