@@ -128,7 +128,9 @@ body {
 
 .menu {
     min-width: 768px;
-    transition: background 0.15s
+    transition: background 0.15s;
+    font-size: 14px;
+
 }
 
 .menu.-fixed {
@@ -147,7 +149,7 @@ body {
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 14px;
+
     text-align: center;
     list-style: none;
 }
@@ -162,7 +164,7 @@ body {
 }
 
 .menu-list .menu-item>.link:hover {
-    color: #353535
+    color: black;
 }
 
 .menu-list .menu-item.-active>.link,
@@ -240,6 +242,7 @@ body {
 
 main {
     width: 100%;
+    margin-top: 50px;
 }
 
 .portfolio {
@@ -253,34 +256,38 @@ main {
     margin-top: 90px;
     grid-column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding-right: 35px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 #individual {
     margin-top: 130px;
     display: grid;
     grid-column-gap: 3px;
-    padding-right: 35px;
+    padding-right: 15px;
+    padding-left: 15px;
     row-gap: 20px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
 }
 
 
 #kids{
-    padding: 0 35px 0 5px ;
+    /* padding: 0 35px 0 5px ; */
     margin-top: 130px;
     column-gap: 5px;
     row-gap: 20px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
+    padding-left: 15px;
 }
 
 #love{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     margin-top: 130px;
-    padding-right: 35px;
+    padding-right: 15px;
     grid-column-gap: 10px;
+    padding-left: 15px;
 }
 
 #individual a{
@@ -289,7 +296,7 @@ main {
 
 
 #kids a{
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* галлерея. главная страница*/
@@ -301,12 +308,15 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 5px;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-size: 15px;
 }
 
 .gallery a{
     text-decoration: none;
     color: black;
-    font-size: 25px;
+    
 }
 
 .buduar  {
@@ -314,7 +324,7 @@ main {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
-    font-family: 'Great Vibes', cursive;
+    
 }
 
 .lovestory {
@@ -322,7 +332,7 @@ main {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    font-family: 'Great Vibes', cursive;
+  
 }
 
 .individual {
@@ -330,7 +340,7 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    font-family: 'Great Vibes', cursive;
+
 }
 
 .kids {
@@ -338,7 +348,7 @@ main {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-family: 'Great Vibes', cursive;
+
 }
 
 .buduar img{
@@ -360,24 +370,44 @@ main {
 
 footer{
     width: 100%;
-    
-    margin-top: 50px;
-    height: 200px;
-    /* position: relative; */
+    margin-top: 120px;
+    height: 115px;
     background: linear-gradient(to bottom, #FFF0FB, #bda0c5);
+    font-family: 'Oswald', sans-serif;
     opacity: 1;
+    font-size: 17px;
 }
 
-footer p{
+.foot{
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, auto);
+    display: grid;
+}
+
+.aboutus{
     text-align: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 25px;
 }
 
-.telephon{
+.contact{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.location{
     text-align: right;
     padding-right: 20px;
-    /* position: absolute; */
-    /* font-weight: 550; */
-    font-family: 'Caveat', cursive;
 }
+
+@media (max-width:890px){
+    footer{
+        font-size: 13px;
+    }
+    .menu-item{
+        font-size: 10px;
+    }
+    .gallery{
+        font-size: 10px;
+    }
+}
+
