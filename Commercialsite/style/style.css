@@ -295,10 +295,6 @@ main {
 }
 
 
-#kids a{
-    /* padding: 10px; */
-}
-
 /* галлерея. главная страница*/
 
 .gallery{
@@ -308,6 +304,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 5px;
+    letter-spacing: .1em;
     font-family: 'Oswald', sans-serif;
     /* font-family: 'Roboto Condensed', sans-serif; */
     font-size: 15px;
@@ -376,6 +373,7 @@ footer{
     font-family: 'Oswald', sans-serif;
     opacity: 1;
     font-size: 17px;
+
 }
 
 .foot{
@@ -411,3 +409,28 @@ footer{
     }
 }
 
+.feedback{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-row-gap: 2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.feeditem img{
+   border-radius: 70%;
+   float: left;
+   width: 150px;
+   height: 150px;
+   padding: 15px;
+  
+}
+
+.feeditem{
+    letter-spacing: .05em;
+    line-height: 1em;
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-style: italic;
+}
