@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link
+    <link
         href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Great+Vibes|Amatic+SC|Caveat|Indie+Flower|Playfair+Display|EB+Garamond|Oswald|Playfair+Display|Poiret+One"
         rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<cc341759-7ac7-4c16-88e8-a07ca977dbe3>&lang=ru_RU"
+        type="text/javascript"></script>
 </head>
 
 <body>
@@ -29,24 +31,70 @@
                 </ul>
             </div>
         </nav>
-        <div>CONTACTS</div>
     </header>
-
-    <footer>
-            <div class="foot">
-                <div class="contact">
-                    <p><i class="far fa-paper-plane"></i> annaglushkova@photograph.ru <br>
-                        <i class="fas fa-phone"></i>  7-951-194-07-95</p>
-                </div>
-                <div class="aboutus">
-                    <p><i class="fas fa-camera-retro"></i> Авторская студия Анны Глушковой</p>
-                    <p><i class="fas fa-hashtag"></i> Творим более 7 лет</p>
-                </div>
-                <div class="location">
-                    <p><i class="fas fa-location-arrow"></i> Наш адрес: г. Ижевск, БЦ Время, 953 офис</p>
-                </div>
+    <main>
+        <div class="contacts">
+            <div>
+                <img src="https://pp.userapi.com/c855020/v855020543/1460a/C45EfJ8NB6s.jpg" alt="">
             </div>
-        </footer>
+            <div class="contacts-data">
+                <hr>
+                <p>Профессиональный фотограф:<h4>Анна Глушкова</h4>
+                </p>
+                <p>Телефон: <h4>7-951-194-07-95</h4>
+                </p>
+                <p>Электронная почта: <h4>anna.glushkova.98@mail.ru</h4>
+                </p>
+                <p><a target='blank' href="https://vk.com/anna_yur_evna"><i class="fab fa-vk"></i>anna_yur_evna</a></p>
+                <hr>
+            </div>
+            <div id="map"></div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="contact">
+                <p><i class="far fa-paper-plane"></i> anna.glushkova.98@mail.ru <br>
+                    <i class="fas fa-phone"></i> 7-951-194-07-95</p>
+            </div>
+            <div class="aboutus">
+                <p><i class="fas fa-camera-retro"></i> Авторская студия Анны Глушковой</p>
+                <p><i class="fas fa-hashtag"></i> Творим более 7 лет</p>
+            </div>
+            <div class="location">
+                <p><i class="fas fa-location-arrow"></i> Наш адрес: г. Ижевск, БЦ Время, 953 офис</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                    center: [56.852745, 53.207556],
+                    zoom: 15
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                myGeoObject = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates: [56.852745, 53.207556]
+                    },
+                    properties: {
+                        iconContent: 'Мы рядом :)',
+                    }
+                }, {
+                    preset: 'islands#blackStretchyIcon',
+                    draggable: false
+                });
+
+            myMap.geoObjects
+                .add(myGeoObject);
+        }
+    </script>
 </body>
 
 </html>
