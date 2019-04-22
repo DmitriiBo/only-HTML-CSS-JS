@@ -584,3 +584,51 @@ footer{
   }
 } 
 /* price css */
+
+
+/*contacts*/
+
+.contacts{
+    width: 50%;
+    height: 600px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 55% 45%;
+    grid-template-areas: 
+    'img con'
+    'map map';
+    grid-row-gap: 35px;
+}
+
+.contacts img{
+    grid-area: img;
+    width: 75%;
+    height: 100%;
+    border-radius: 17%;
+}
+
+
+
+#map{
+    grid-area: map;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.contacts-data{
+   grid-area: con;
+   text-align: left;
+   width: 73%;
+   letter-spacing: .05em;
+   line-height: 1em;
+   font-size: 16px;
+   font-style: oblique;
+   
+}
+
+.contacts-data a{
+     color: black;
+}
