@@ -603,7 +603,7 @@ footer{
 
 .contacts img{
     grid-area: img;
-    width: 75%;
+    width: auto;
     height: 100%;
     border-radius: 17%;
 }
@@ -631,4 +631,30 @@ footer{
 
 .contacts-data a{
      color: black;
+}
+
+/*contacts*/
+
+/*discounts*/
+
+.discount{
+    width: 45%;
+    height: 160px;
+    font-size: 25px;
+    letter-spacing: .09em;
+    line-height: 2em;
+    border: .5px solid #353535;
+    margin: 100px auto 150px auto;
+    font-style: initial
+    
+}
+
+.discount p {
+    text-align: left;
+    color: black;
+}
+
+.discount img{
+    float: left;
+    margin: 20px;
 }
