@@ -4,7 +4,7 @@
 .doposle {
     width: 380px;
     height: 400px;
-    margin: 0 auto;
+    margin: 85px auto;
 }
 
 .doposle img {
@@ -594,17 +594,17 @@ footer{
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0;
     grid-template-rows: 55% 45%;
     grid-template-areas: 
-    'img con'
+    'con img'
     'map map';
-    grid-row-gap: 35px;
 }
 
 .contacts img{
     grid-area: img;
     width: auto;
-    height: 100%;
+    height: 79%;
     border-radius: 17%;
 }
 
@@ -620,13 +620,13 @@ footer{
 
 .contacts-data{
    grid-area: con;
-   text-align: left;
-   width: 73%;
+   text-align: right;
+   width: 97%;
    letter-spacing: .05em;
    line-height: 1em;
    font-size: 16px;
    font-style: oblique;
-   
+   padding-left: 0px;
 }
 
 .contacts-data a{
@@ -657,4 +657,13 @@ footer{
 .discount img{
     float: left;
     margin: 20px;
+}
+
+.article{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    width: 10%;
+    height: 65px;
 }
