@@ -26,7 +26,7 @@
     
 }
 
-.logo img.lazyload,
+/* .logo img.lazyload,
 .logo img.lazyloading {
     opacity: 0
 }
@@ -64,7 +64,7 @@
 
 .logo.-default {
     text-align: center
-}
+} */
 
 
 /* *,*::after,*::before {
@@ -78,7 +78,6 @@ body {
     height: 100%;
     background: #FFF0FB;
     color: #353535;
-    font-size: 15px;
     margin: 0;
     padding: 0
 }
@@ -247,6 +246,7 @@ main {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 100px;
+    
 }
 
 .portfolio {
@@ -307,6 +307,7 @@ main {
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
+    
     grid-gap: 5px;
     letter-spacing: .1em;
     font-family: 'Oswald', sans-serif;
@@ -382,7 +383,6 @@ footer{
 }
 
 .mapofpage{
-   
     width: 100%;
     height: 100%;
     font-size: 17px;
@@ -391,7 +391,6 @@ footer{
 
 .mapofpage li{
     list-style: none;
-    
 }
 
 .mapofpage a{
@@ -420,17 +419,7 @@ footer{
     padding-right: 20px;
 }
 
-@media (max-width:890px){
-    footer{
-        font-size: 13px;
-    }
-    .menu-item{
-        font-size: 10px;
-    }
-    .gallery{
-        font-size: 10px;
-    }
-}
+
 
 .feedback{
     display: grid;
@@ -443,8 +432,8 @@ footer{
 .feeditem img{
    border-radius: 70%;
    float: left;
-   width: 150px;
-   height: 150px;
+   width: 11vmin;
+   height: 11vmin;
    padding: 15px;
   
 }
@@ -452,11 +441,28 @@ footer{
 .feeditem{
     letter-spacing: .05em;
     line-height: 1em;
-    font-size: 16px;
-    padding-right: 20px;
-    padding-left: 20px;
+    font-size: 1.3vw;
+    padding: 0 5vw;
     font-style: italic;
 }
+
+@media (min-width:300px) and (max-width: 800px) {
+    .feedback{
+        width: calc(100% - 25px);
+    }
+    .feeditem img{
+        width: 20vmax;
+        height: 20vmax;
+    }
+    .feeditem{
+        font-size: 2.5vmax;
+    }
+    .menu-item{
+        font-size: 2.5vmax;
+    }
+
+}
+
 
 /* price css */
 
@@ -504,7 +510,7 @@ footer{
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-.snip1404 header {
+.snip1404 header-price {
   background-color: #5f3047;
   color: #ffffff;
 }
@@ -659,15 +665,14 @@ footer{
 /*discounts*/
 
 .discount{
-    width: 45%;
-    height: 160px;
-    font-size: 25px;
+    width: 60vw;
+    height: 35vh;
+    font-size: 2vw;
     letter-spacing: .09em;
     line-height: 2em;
     border: .5px solid #353535;
     margin: 100px auto 211px auto;
     font-style: initial
-    
 }
 
 .discount p {
@@ -678,6 +683,7 @@ footer{
 .discount img{
     float: left;
     margin: 20px;
+    width: 12vmax;
 }
 
 .article{
@@ -687,4 +693,112 @@ footer{
     font-size: 25px;
     width: 10%;
     height: 65px;
+}
+
+
+header{
+    height: 350px;
+}
+
+@media (min-width:320px) and (max-width: 800px){
+    .discount{
+      font-size: 3vmax;
+      width: 100%;
+      height: 100%;
+    }
+    .logo{
+        font-size: 95px;
+        margin: 0 auto;
+    }
+    main{
+        height: 100%;
+        margin: 0;
+    }
+    body{
+        min-width: 300px;
+        width: 100%;
+    }
+    .gallery{
+        height: 100%;
+        width: 100%;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .gallery img{
+        width: 100%;
+    }
+    .snip1404{
+        margin: 0 auto;
+        font-size: 4vw;
+        height: 1250px;
+    }
+    header{
+        height: 450px;
+        
+    }
+    .menu{
+        min-width: 60%;
+    }
+    .article{
+        font-size: 2.5vmax;
+        width: 100%;
+    }
+    footer{
+        font-size: 13px;
+        margin-top: 50px;
+        height: 100%;
+    }
+    .foot{
+        width: calc(100% - 20px) ;
+        grid-template-columns: 30% 30% 40%;
+    }
+    .mapofpage ul{
+        padding-inline-start: 0;
+    }
+    .contacts{
+       margin: 0 auto;
+       width: 100%;
+       height: 800px;
+       
+    }
+    .contacts img{
+        width: 100%;
+        height: auto;
+    }
+    #kids{
+       display: flex;
+       flex-direction: column;
+       margin:0 auto;   
+    }
+    #kids img{
+        width: 100%;
+    }
+    #love{
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;   
+     }
+     #love img{
+         width: 100%;
+     }
+     #buduar{
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;   
+     }
+     #buduar img{
+         width: 100%;
+     }
+     #individual{
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;   
+     }
+     #individual img{
+         width: 100%;
+     }
+     
+    
 }
