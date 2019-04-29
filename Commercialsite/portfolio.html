@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- хэд -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,13 +20,21 @@
         rel="stylesheet">
 </head>
 
+<!-- тело страницы -->
 <body>
+    <!-- хэдер -->
     <header>
-        <div class="logo"><a href="./portfolio.html">Anna Glushkova</a></div>
+        <div class="logo"><a href="/">Anna Glushkova</a>
+        </div>
+        <div class="section">
+            <a class="menu-btn" href="">
+                <span></span>
+            </a>
+        </div>
         <nav>
             <div class="menu js-menu">
                 <ul class="menu-list ">
-                    <li class="menu-item -active"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu-item -active"><a class="link" href="/">Портфолио</a></li>
                     <li class="menu-item"><a class="link" href="./feedback.html">Отзывы</a></li>
                     <li class="menu-item"><a class="link" href="./price.html">Цены</a></li>
                     <li class="menu-item"><a class="link" href="./discount.html">Скидки</a></li>
@@ -40,6 +48,7 @@
             <hr>
         </div>
     </header>
+    <!-- контентная часть -->
     <main>
         <div class="gallery">
             <a class="buduar" href="./buduar.html">
@@ -77,36 +86,39 @@
         </div>
 
     </main>
+     <!-- футер(подвал) -->
     <footer>
-        <div class="foot">    
+        <div class="foot">
             <div class="aboutus">
-                <p><i class="fas fa-camera-retro"></i> Авторская студия Анны Глушковой</p>
-                <p><i class="fas fa-hashtag"></i> Творим более 7 лет</p>
+                <p><i class="fas fa-camera-retro"></i> Фотограф Анна Глушкова</p>
+                <p><i class="fas fa-hashtag"></i> Творим уже целый год</p>
             </div>
             <div class="mapofpage">
-                    <ul>
-                        <li><a href="./portfolio.html">Портфолио</a></li>
-                        <li><a href="./feedback.html">Отзывы</a></li>
-                        <li><a href="./price.html">Цены</a></li>
-                        <li><a href="./discount.html">Скидки</a></li>
-                        <li><a href="./contacts.html">Контакты</a></li>
-                    </ul>
-                </div>
+                <ul> 
+                    <li><a href="/">Портфолио</a></li>
+                    <li><a href="./feedback.html">Отзывы</a></li>
+                    <li><a href="./price.html">Цены</a></li>
+                    <li><a href="./discount.html">Скидки</a></li>
+                    <li><a href="./contacts.html">Контакты</a></li>
+                </ul>
+            </div>
             <div class="contact">
-                <p><i class="fas fa-location-arrow"></i> Наш адрес: г. Ижевск, БЦ Время, 953 офис</p>
-                <p><i class="far fa-paper-plane"></i> anna.glushkova.98@mail.ru</p> 
-                   <p><i class="fas fa-phone"></i> 7-951-194-07-95</p>
+                <p><i class="fas fa-location-arrow"></i> Наш адрес: г. Ижевск</p>
+                <p><i class="far fa-paper-plane"></i> anna.glushkova.98@mail.ru</p>
+                <p><i class="fas fa-phone"></i> 7-951-194-07-95</p>
             </div>
         </div>
     </footer>
-
+   <!-- инициализация Jquery для живого меню -->
     <script>
         $(".shuffle-me").shuffleImages({
             trigger: "imageHover",
             hoverTrigger: 750,
         })
     </script>
-
+     <!-- подключение корневого файла с JavaScript -->
+    <script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
