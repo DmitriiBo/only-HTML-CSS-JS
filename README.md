@@ -1,5 +1,5 @@
-# Diplom
-Diplom
+# Thesis
+Thesis
 1) Портфолио
    - Индивидуальные
    - Детские 
