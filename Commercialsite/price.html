@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/jquery.min.js"></script>
     <meta name="description" content="Профессиональный фотограф Анна Глушкова сделает для вас фотосессию и перечисление фотосессий">
     <title>Цены: Фотограф Анна Глушкова</title>
     <link rel="stylesheet" href="./style/style.css">
@@ -17,11 +18,17 @@
 
 <body>
     <header>
-        <div class="logo"><a href="./portfolio.html">Anna Glushkova</a></div>
+        <div class="logo"><a href="/">Anna Glushkova</a>
+        </div>
+        <div class="section">
+            <a class="menu-btn" href="">
+                <span></span>
+            </a>
+        </div>
         <nav>
             <div class="menu js-menu">
                 <ul class="menu-list ">
-                    <li class="menu-item -active"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu-item -active"><a class="link" href="/">Портфолио</a></li>
                      
                     <li class="menu-item"><a class="link" href="./feedback.html">Отзывы</a></li>
                     <li class="menu-item"><a class="link" href="./price.html">Цены</a></li>
@@ -36,15 +43,15 @@
             <hr>
         </div>
     </header>
-
+   <!-- Страница ЦЕНЫ-->
     <main>
         <div class="snip1404">
             <div class="plan">
-                <header>
+                <header-price>
                     <h4 class="plan-title">Индвидуальная </h4>
                     <div class="plan-cost"><span class="plan-price">700</span><span class="plan-type">/час</span>
                     </div>
-                </header>
+                </header-price>
                 <ul class="plan-features">
                     <li><i class="ion-checkmark"> </i>Персональная фотосессия</li>
                     <li><i class="ion-checkmark"> </i>Помощь с выбором локации</li>
@@ -53,11 +60,11 @@
                 </ul>
             </div>
             <div class="plan">
-                <header>
+                <header-price>
                     <h4 class="plan-title">Лав Стори</h4>
                     <div class="plan-cost"><span class="plan-price">1000</span><span class="plan-type">/час</span>
                     </div>
-                </header>
+                </header-price>
                 <ul class="plan-features">
                     <li><i class="ion-checkmark"> </i>Фотосессия для двоих</li>
                     <li><i class="ion-checkmark"> </i>Помогу подобрать идеальные ракурсы</li>
@@ -65,11 +72,11 @@
                 </ul>
             </div>
             <div class="plan featured">
-                <header>
+                <header-price>
                     <h4 class="plan-title">Будуар</h4>
                     <div class="plan-cost"><span class="plan-price">1000</span><span class="plan-type">/час</span>
                     </div>
-                </header>
+                </header-price>
                 <ul class="plan-features">
                     <li><i class="ion-checkmark"> </i>Создание образа роковой красотки</li>
                     <li><i class="ion-checkmark"> </i>Фото в течение недели</li>
@@ -77,11 +84,11 @@
                 </ul>
             </div>
             <div class="plan">
-                <header>
+                <header-price>
                     <h4 class="plan-title">Детская</h4>
                     <div class="plan-cost"><span class="plan-price">700</span><span class="plan-type">/час</span>
                     </div>
-                </header>
+                </header-price>
                 <ul class="plan-features">
                     <li><i class="ion-checkmark"> </i>Фотосессия для самых маленьких</li>
                     <li><i class="ion-checkmark"> </i>Помогу Вашим деткам проявить в себе фотомодель</li>
@@ -94,12 +101,12 @@
     <footer>
             <div class="foot">    
                 <div class="aboutus">
-                    <p><i class="fas fa-camera-retro"></i> Авторская студия Анны Глушковой</p>
-                    <p><i class="fas fa-hashtag"></i> Творим более 7 лет</p>
+                    <p><i class="fas fa-camera-retro"></i> Фотограф Анна Глушкова</p>
+                    <p><i class="fas fa-hashtag"></i> Творим уже целый год</p>
                 </div>
                 <div class="mapofpage">
                         <ul>
-                            <li><a href="./portfolio.html">Портфолио</a></li>
+                            <li><a href="/">Портфолио</a></li>
                             <li><a href="./feedback.html">Отзывы</a></li>
                             <li><a href="./price.html">Цены</a></li>
                             <li><a href="./discount.html">Скидки</a></li>
@@ -107,7 +114,7 @@
                         </ul>
                     </div>
                 <div class="contact">
-                    <p><i class="fas fa-location-arrow"></i> Наш адрес: г. Ижевск, БЦ Время, 953 офис</p>
+                    <p><i class="fas fa-location-arrow"></i> Наш адрес: г. Ижевск</p>
                     <p><i class="far fa-paper-plane"></i> anna.glushkova.98@mail.ru</p> 
                        <p><i class="fas fa-phone"></i> 7-951-194-07-95</p>
                 </div>
@@ -121,6 +128,7 @@
             }
         );
     </script>
+<script src="./js/script.js"></script>
 </body>
 
 </html>
